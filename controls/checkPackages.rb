@@ -31,6 +31,6 @@ end
 describe package('php7.4-gd') do
     it { should be_installed }
 end
-describe bash('php -m | grep gd') do
+describe command('php -m | grep gd') do
     its('stdout') { should match gd }
 end
