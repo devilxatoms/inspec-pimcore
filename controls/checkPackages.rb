@@ -34,5 +34,5 @@ end
 
 describe command('php -m | grep gd') do
     it { should exist }
-    its('stdout') { should eq 'gd/\r/\n' }
+    its('stdout') { should eq 'gd ' }
 end
