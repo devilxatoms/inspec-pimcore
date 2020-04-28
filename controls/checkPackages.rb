@@ -39,7 +39,7 @@ control 'check-php-packages' do
     end
 end
 
-control 'check-modules-enables' do
+control 'check-modules-enabled' do
     describe command('php -m | grep gd') do
         its('stdout') { should match 'gd' }
     end
