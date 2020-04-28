@@ -43,7 +43,7 @@ control 'check-php-packages' do
     describe package('php7.4-opcache') do
         it { should be_installed }
     end
-    describe package('php7.4-imagick') do
+    describe package('php-imagick') do
         it { should be_installed }
     end
     describe package('php7.4-bcmath') do
