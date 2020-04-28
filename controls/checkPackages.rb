@@ -16,3 +16,12 @@ end
 describe package('nfs-common') do
     it { should be_installed }
 end
+describe package('git') do
+    it { should be_installed }
+end
+describe package('binutils') do
+    it { should be_installed }
+end
+describe package('make') do
+    it { should be_installed }
+end
