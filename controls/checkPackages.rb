@@ -1,4 +1,4 @@
-control 'verify-packages' do
+control 'check-system-packages' do
     impact 1
     title 'system is up-to-date'
     describe package('php7.4') do
@@ -31,6 +31,9 @@ control 'verify-packages' do
     describe package('ffmpeg') do
         it { should be_installed }
     end
+end
+
+control 'check-php-packages' do
     describe package('php7.4-gd') do
         it { should be_installed }
     end
