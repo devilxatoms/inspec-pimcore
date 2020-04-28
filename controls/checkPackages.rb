@@ -37,6 +37,18 @@ control 'check-php-packages' do
     describe package('php7.4-gd') do
         it { should be_installed }
     end
+    describe package('php7.4-xml') do
+        it { should be_installed }
+    end
+    describe package('php7.4-opcache') do
+        it { should be_installed }
+    end
+    describe package('php7.4-imagick') do
+        it { should be_installed }
+    end
+    describe package('php7.4-bcmath') do
+        it { should be_installed }
+    end
 end
 
 control 'check-modules-enabled' do
