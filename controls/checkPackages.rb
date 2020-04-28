@@ -25,3 +25,9 @@ end
 describe package('make') do
     it { should be_installed }
 end
+describe package('ffmpeg') do
+    it { should be_installed }
+end
+describe package('php7.4-gd') do
+    it { should be_installed }
+end
