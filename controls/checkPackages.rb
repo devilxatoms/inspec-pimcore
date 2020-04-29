@@ -100,7 +100,7 @@ control 'check-php-packages' do
     describe package('php7.4-zip') do
         it { should be_installed }
     end
-    describe package('php-simplexml') do
+    describe package('simplexml') do
         it { should be_installed }
     end
     describe package('php7.4-bcmath') do
