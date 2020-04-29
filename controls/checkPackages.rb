@@ -94,7 +94,7 @@ control 'check-php-packages' do
     describe package('php7.4-mysqlnd') do
         it { should be_installed }
     end
-    describe package('php7.4-redis') do
+    describe package('php-redis') do
         it { should be_installed }
     end
     describe package('php7.4-zip') do
