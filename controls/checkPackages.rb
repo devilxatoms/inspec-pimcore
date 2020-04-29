@@ -66,6 +66,10 @@ control 'check-system-packages' do
     end
 end 
 
+describe php_modules do
+    its(modules) { should include 'gd' }
+end
+
 control 'check-php-packages' do
     describe package('php7.4-dev') do
         it { should be_installed }
