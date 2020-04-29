@@ -91,7 +91,7 @@ control 'check-php-packages' do
     describe package('php7.4-mbstring') do
         it { should be_installed }
     end
-    describe package('php7.4-mysqlnd') do
+    describe package('php-mysqlnd') do
         it { should be_installed }
     end
     describe package('php-redis') do
@@ -100,7 +100,7 @@ control 'check-php-packages' do
     describe package('php7.4-zip') do
         it { should be_installed }
     end
-    describe package('php7.4-simplexml') do
+    describe package('php-simplexml') do
         it { should be_installed }
     end
     describe package('php7.4-bcmath') do
